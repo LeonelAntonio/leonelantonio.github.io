@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alura</title>
+</head>
+<body>
+    <SCript>
+
+        /**document.write es para escribir HTML dentro de Javascript**/
+        document.write("La edad de Leonel es: ");
+        document.write("<br>");
+        document.write(20+9, "<br>");
+        document.write("la edad sumada de 3 es... " + 20+24+23);
+
+        document.write("<br>");
+        document.write("Mi edad es " + 12);
+
+        document.write("<br>");
+        document.write("<h1>probando etiquetas de HTML en Javascript</h1>");
+
+        document.write("<br>");
+        document.write("Leonel tiene: " + (2022-1993) + " años");
+
+        /** uso de variables en Javascript**/
+
+        document.write("<br>");
+
+        var anho = 2022;
+
+        document.write("la edad de J es " + (anho-2000) + " años" + "<br>");
+        document.write("la edad de S es " + (anho-2001) + " años" + "<br>");
+        document.write("la edad de T es " + (anho-1993) + " años" + "<br>");
+
+       
+        var promedio = (20+25+15)/3;
+        document.write("<br>")
+        document.write("el promedio es " +  Math.round(promedio));
+
+        var saltoLinea  = "<br>"
+
+        document.write(saltoLinea);
+
+
+
+        /**  CREANDO FUNCIONES  **/
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        saltarLinea(); /** aplicando la función**/
+
+        document.write("usando las funciones, utilizando br, habiendo creado la función antes");
+
+        saltarLinea();
+
+        document.write("usando las funciones, utilizando br antes, aplicando ya las funciones");
+
+        saltarLinea()
+
+        //función con parámetros
+        function imprimir(frase){
+            document.write(frase)
+        }
+
+        imprimir("probando una función con parámetros");
+        imprimir(saltoLinea);
+        imprimir("probando de nuevo función con parámetros");   
+
+
+        saltarLinea();
+
+        function saltarLinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+        }
+
+        var miEdad = 18;
+        var edadHermano = 15;
+
+        imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
+
+    </SCript>
+
+</body>
+</html>
